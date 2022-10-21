@@ -7,6 +7,6 @@ def time_use(func):
         s_time = time.monotonic()
         result = func(*args, **kwargs)
         e_time = time.monotonic()
-        print(f"Время сортировки массива: {timedelta(e_time - s_time)}")
+        print(f"Время сортировки массива {func.__name__}: {timedelta(e_time - s_time)}")
         return result
     return wrapper

@@ -1,7 +1,3 @@
-from timeuse import time_use
-
-
-@time_use
 def count_sort(seq):
     """Функция сортировки последовательности методом подсчета"""
     freq = [0]*(max(seq)+1)
